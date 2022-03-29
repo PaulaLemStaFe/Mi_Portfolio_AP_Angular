@@ -13,6 +13,10 @@ import { HabilidadesblandasComponent } from './componentes/habilidadesblandas/ha
 import { AprendizajesdevidaComponent } from './componentes/aprendizajesdevida/aprendizajesdevida.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './componentes/login/login.component';
+import { HomeComponent } from './componentes/home/home.component';
+import { EditionComponent } from './componentes/edition/edition.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,12 +29,16 @@ import { HttpClientModule } from '@angular/common/http';
     MisproyectosComponent,
     HabilidadesblandasComponent,
     AprendizajesdevidaComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    HomeComponent,
+    EditionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
